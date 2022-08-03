@@ -1,10 +1,13 @@
+import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
 export default function App() {
+  const a = 1;
+
   return (
-    <View accessibilityLabel={'App_Root'} style={styles.container}>
+    <View accessibilityLabel="App_Root" style={styles.container}>
       <Text>Open up App.tsx to start working on your app!</Text>
       <Ionicons name="md-checkmark-circle" size={32} color="green" />
       <StatusBar style="auto" />
