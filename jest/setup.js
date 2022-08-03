@@ -1,1 +1,1 @@
-jest.mock('lodash/debounce', () => jest.fn(fn => fn));
+jest.mock('lodash/debounce', () => jest.fn((fn) => fn));
