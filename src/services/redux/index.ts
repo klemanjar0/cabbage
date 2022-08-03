@@ -28,7 +28,7 @@ export function configureStore(appReducer: Reducer, appSaga: Saga) {
     Rehydration.updateReducers(store);
   }
 
-  return store;
+  return store; // store
 }
 
 const applicationStore = configureStore(rootReducer, rootSaga);
