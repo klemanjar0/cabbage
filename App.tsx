@@ -4,8 +4,6 @@ import { StyleSheet, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
 export default function App() {
-  const a = 1;
-
   return (
     <View accessibilityLabel="App_Root" style={styles.container}>
       <Text>Open up App.tsx to start working on your app!</Text>
