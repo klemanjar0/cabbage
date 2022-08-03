@@ -1,0 +1,11 @@
+name: Cabbage CI/CD
+on:
+  pull_request:
+    branches:
+      - master
+jobs:
+  test_with_jest:
+    runs-on: ubuntu-latest
+    steps:
+      - run: npm install --force
+      - run: npm run test

@@ -1,12 +1,12 @@
 import React from 'react';
 import App from './App';
-import { render } from '@testing-library/react-native';
+import { renderWithRedux } from './jest/utils';
 
 describe('App', () => {
   const Component = <App />;
 
   it('renders correctly', () => {
-    const { getByLabelText } = render(Component);
+    const { getByLabelText } = renderWithRedux(Component);
 
     expect(getByLabelText('App_Root')).toBeTruthy();
   });
